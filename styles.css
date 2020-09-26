@@ -1,0 +1,146 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600&display=swap');
+
+*{
+    margin:0;
+    padding:0;
+	box-sizing:border-box;
+}
+
+html{
+	font-family:poppins;
+	font-size:10px;
+}
+
+:root {
+    --red:hsl(0, 78%, 62%);
+    --cyan:hsl(180, 62%, 55%);
+    --orange: hsl(34, 97%, 64%);
+    --blue:hsl(212, 86%, 64%);
+    --very-dark-blue:hsl(234, 12%, 34%);
+    --grayish-blue: hsl(229, 6%, 66%);
+    --light-grey:hsl(0, 0%, 98%);
+}
+
+body{
+    padding: 10% 6%;
+    background-color: var(--light-grey);
+}
+
+main{
+    margin: 3rem 0;
+    text-align: center;
+}
+
+p{
+    font-size:1.3rem;
+    font-weight: 400;
+    color: var(--grayish-blue);
+}
+h2{
+    font-size: 2.4rem;
+    color: var(--very-dark-blue);
+}
+
+
+.h2-light{
+    font-weight: 200;
+}
+
+.h2-bold{
+    padding-bottom: 2rem;
+}
+
+h3{
+    padding-bottom: 0.5rem;
+    font-size: 1.8rem;
+    color: var(--very-dark-blue);
+}
+
+
+
+.card{
+    padding: 2rem;
+    margin: 5rem 0;
+    max-width: 210rem;
+    background-color: white;
+    border-top: 5px solid;
+    border-radius: 5px;
+    box-shadow:
+    0 2px 15px rgba(0, 0, 0, 0.24);
+}
+
+.card p{
+    padding-bottom: 3rem;
+} 
+
+.supervisor{
+    border-color: var(--cyan);
+}
+
+.team-builder{
+    border-color: var(--red);
+}
+
+.karma{
+    border-color: var(--orange);
+}
+
+.calculator{
+    border-color: var(--blue);
+}
+
+
+.icon{
+    display: flex;
+    justify-content: flex-end;
+}
+
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
+
+
+@media only screen and (min-width: 768px) {
+
+    body{
+        padding: 0 8%;
+    }
+
+
+    h3{
+        font-size: 2rem;
+    }
+
+
+   .cards-container{
+       margin-top: 0;
+       display: grid;
+       grid-template-rows: repeat(8,auto);
+       grid-template-columns: repeat(12,1fr);
+       gap: 3rem;
+   }
+
+   .team-builder{
+    grid-row: 1/4;
+    grid-column: 5/9;
+   }
+
+   .supervisor{
+    grid-row: 2/5;
+    grid-column: 1/5;
+    }
+
+    .karma{
+    grid-row: 3/6;
+    grid-column: 5/9;
+    }
+
+    .calculator{
+    grid-row: 2/5;
+    grid-column: 9/13;
+    }
+ 
+    .card{
+        padding:2rem;
+    }
+
+}
